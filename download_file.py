@@ -27,7 +27,7 @@ def download_blob(project_name: str,
     return blob
 
 def create_dataframe(file_name: str, sep: str=',', var: list=[]) -> pd.DataFrame:
-    df = pd.read_csv('./Copy of yield.csv', sep=sep)[var]
+    df = pd.read_csv(file_name, sep=sep)[var]
 
     return df
 
